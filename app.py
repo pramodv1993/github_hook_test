@@ -10,5 +10,7 @@ async def root():
 
 @app.post("/postreceive/")
 async def display_msg(data: Dict):
-    return {"message_received": data}
+    received_data = {"message_received": data}
+    print(received_data)
+    return received_data
 
