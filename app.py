@@ -9,6 +9,6 @@ async def root():
     return {"message": "Hello World"}
 
 @app.post("/postreceive/")
-async def display_msg(data:Dict):
+async def display_msg(data: Dict):
     return {"message_received": data}
 
