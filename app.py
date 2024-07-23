@@ -18,5 +18,6 @@ async def display_msg(req: Request):
     elif req.headers['Content-Type'] == 'application/x-www-form-urlencoded':
         item = await req.form()
     received_data = {"message_received": item}
+    print(received_data)
     return received_data
 
